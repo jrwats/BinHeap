@@ -12,9 +12,10 @@ If `cmp(a, b) < 0`, then `a` comes before `b`
 If `cmp(a, b) > 0`, then `b` comes before `a`
 
 ### Example
-```
+```js
 // Priority queue where a greater priority is more important
 const BinHeap = require('bin-heap-js');
+
 let priorityQueue = new BinHeap((a,b) => b.priority - a.priority); // max-heap
 priorityQueue.push({name: "job C", job: ..., priority: 5});
 priorityQueue.push({name: "job A", job: ..., priority: 99});
