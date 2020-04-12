@@ -8,9 +8,13 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "jest": "^25.3.0"
   },
   "scripts": {
-    "test": "yarn jest"
+    "test": "yarn jest",
+    "build": "yarn babel src/BinHeap.js --no-comments --minified -o index.js"
+    "clean": "rm -rf lib"
   }
 }
