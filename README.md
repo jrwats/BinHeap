@@ -1,7 +1,8 @@
 # BinHeap
 A binary heap with a simple native-array-based implementation.
 
-## Constructor: Heap([cmp])
+## Constructor
+`BinHeap([cmp])`
 The constructor takes an optional comparator.
 If provided, the comparator should behave similar to the comparator passed to `Array.prototype.sort`.
 i.e.
@@ -27,7 +28,7 @@ The default comparator provided functions as a min-heap for numbers:
 ```
 
 ## Methods
-**push(item)** Push item onto heap
-**pop()** Pop "top-most" item on heap
-**peek()** Return "top-most" item on heap
-**size()** Number of elements in the heap
+* **push(item)** Push item onto heap
+* **pop()** Pop "top-most" item on heap
+* **peek()** Return "top-most" item on heap
+* **size()** Number of elements in the heap
