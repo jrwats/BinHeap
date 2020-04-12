@@ -3,8 +3,9 @@ A binary heap with a simple native-array-based implementation.
 
 ## Constructor `BinHeap([cmp])`
 The constructor takes an optional comparator.
-If provided, the comparator should behave similar to the comparator passed to `Array.prototype.sort`.
-i.e.
+If provided, the comparator should behave similar to the comparator passed to `Array.prototype.sort`. 
+
+Specifically:
 
 If `cmp(a, b) < 0`, then `a` comes before `b`
 
