@@ -22,7 +22,7 @@ proces(priorityQueue.pop()); // job B
 proces(priorityQueue.pop()); // job C
 ```
 ### DEFAULT
-The default comparator provided functions as a min-heap for numbers:
+The default comparator provided will work as a min-heap for numbers:
 ```
 (a,b) => a - b
 ```
