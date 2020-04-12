@@ -1,13 +1,13 @@
 # BinHeap
 A binary heap with a simple native-array-based implementation.
 
-## Constructor
-`BinHeap([cmp])`
+## Constructor `BinHeap([cmp])`
 The constructor takes an optional comparator.
 If provided, the comparator should behave similar to the comparator passed to `Array.prototype.sort`.
 i.e.
 
 If `cmp(a, b) < 0`, then `a` comes before `b`
+
 If `cmp(a, b) > 0`, then `b` comes before `a`
 
 ### Example
