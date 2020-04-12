@@ -1,2 +1,2 @@
 # BinHeap
-A simple JavaScript array-based BinaryHeap implementation
+A binary heap with a simple native-array-based implementation.
