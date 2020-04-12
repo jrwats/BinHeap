@@ -1,6 +1,6 @@
 {
   "name": "bin-heap-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple Binary Heap implementation for JavaScript",
   "main": "index.js",
   "repository": "git@github.com:jrwats/BinHeap.git",
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "yarn jest",
-    "build": "yarn babel src/BinHeap.js --no-comments --minified -o index.js"
+    "build": "yarn babel src/BinHeap.js --no-comments --minified -o index.js",
     "clean": "rm -rf lib"
   }
 }
