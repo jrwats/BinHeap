@@ -1,4 +1,5 @@
 'use strict';
+
 class BinHeap {
   constructor(compare) {
     this._heap = [];
