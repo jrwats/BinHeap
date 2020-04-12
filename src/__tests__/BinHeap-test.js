@@ -48,4 +48,14 @@ describe('BinHeap test', () => {
     const input = range(100000); // 100k
     expect(heapSort(shuffle(input))).toEqual(input);
   });
+
+  it('object comparator', () => {
+    let priorityQueue = new BinHeap((a, b) => b.priority - a.priority);
+    priorityQueue.push({name: 'C', priority: 5});
+    priorityQueue.push({name: 'A', priority: 99});
+    priorityQueue.push({name: 'B', priority: 10});
+    expect(priorityQueue.pop().name).toEqual('A');
+    expect(priorityQueue.pop().name).toEqual('B');
+    expect(priorityQueue.pop().name).toEqual('C');
+  });
 });

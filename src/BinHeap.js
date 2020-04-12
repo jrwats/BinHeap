@@ -65,7 +65,7 @@ class BinHeap {
   _siftUp(idx) {
     const item = this._heap[idx];
     let parent = (idx - 1) >> 1;
-    while (this._compare(item, this._heap[parent]) < 0) {
+    while (idx > 0 && this._compare(item, this._heap[parent]) < 0) {
       this._heap[idx] = this._heap[parent];
       this._heap[parent] = item;
       idx = parent;
