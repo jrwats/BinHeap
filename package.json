@@ -8,13 +8,17 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/preset-env": "^7.9.5",
     "jest": "^25.3.0"
   },
   "scripts": {
-    "test": "yarn jest",
-    "min-build": "yarn babel src/BinHeap.js --no-comments --minified -o lib/BinHeap.min.js",
-    "build": "mkdir -p lib && cp src/BinHeap.js lib && yarn min-build",
-    "clean": "rm -rf lib"
+    "babel": "babel src/BinHeap.js -o lib/BinHeap.js",
+    "babel-min": "babel src/BinHeap.js --no-comments --minified -o lib/BinHeap.min.js",
+    "build": "yarn cp && yarn babel && yarn babel-min",
+    "clean": "rm -rf lib",
+    "cp": "mkdir -p lib && cp src/BinHeap.js lib/BinHeap.src.js",
+    "prepublish": "yarn clean && yarn build",
+    "test": "jest"
   }
 }
