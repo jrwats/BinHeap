@@ -1,6 +1,6 @@
 {
   "name": "bin-heap-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple Binary Heap implementation for JavaScript",
   "main": "index.js",
   "repository": {
