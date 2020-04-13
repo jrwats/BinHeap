@@ -3,7 +3,11 @@
   "version": "0.0.4",
   "description": "Simple Binary Heap implementation for JavaScript",
   "main": "index.js",
-  "repository": "git@github.com:jrwats/BinHeap.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrwats/BinHeap.git",
+    "directory": "src"
+  },
   "author": "John Watson <jrwats@gmail.com>",
   "license": "MIT",
   "private": false,
