@@ -20,9 +20,9 @@ let priorityQueue = new BinHeap((a,b) => b.priority - a.priority); // max-heap
 priorityQueue.push({name: "job C", job: ..., priority: 5});
 priorityQueue.push({name: "job A", job: ..., priority: 99});
 priorityQueue.push({name: "job B", job: ..., priority: 10});
-proces(priorityQueue.pop()); // job A
-proces(priorityQueue.pop()); // job B
-proces(priorityQueue.pop()); // job C
+process(priorityQueue.pop()); // job A
+process(priorityQueue.pop()); // job B
+process(priorityQueue.pop()); // job C
 ```
 ### DEFAULT
 The default comparator provided will work as a min-heap for numbers:
