@@ -1,9 +1,15 @@
+<p>
+  <a href="https://travis-ci.com/jrwats/BinHeap">
+    <img src="https://img.shields.io/travis/com/jrwats/BinHeap?logo=travis" alt="Travis CI" />
+  </a>
+</p>
+
 # BinHeap
 A binary heap with a simple native-array-based implementation.
 
 ## Constructor `BinHeap([cmp])`
 The constructor takes an optional comparator.
-If provided, the comparator should behave similar to the comparator passed to `Array.prototype.sort`. 
+If provided, the comparator should behave similar to the comparator passed to `Array.prototype.sort`.
 
 Specifically:
 
@@ -13,9 +19,9 @@ If `cmp(a, b) > 0`, then `b` comes before `a`
 
 ### Example
 ```js
-// Priority queue where a greater priority is more important
 const BinHeap = require('bin-heap-js');
 
+// Priority queue where a greater priority is more important
 let priorityQueue = new BinHeap((a,b) => b.priority - a.priority); // max-heap
 priorityQueue.push({name: "job C", job: ..., priority: 5});
 priorityQueue.push({name: "job A", job: ..., priority: 99});
