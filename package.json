@@ -1,6 +1,6 @@
 {
   "name": "bin-heap-js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple Binary Heap implementation for JavaScript",
   "main": "index.js",
   "repository": "git@github.com:jrwats/BinHeap.git",
