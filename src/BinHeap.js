@@ -33,7 +33,7 @@ class BinHeap {
    * swapping children and performing a sift-up (#4) at the end, rather than
    * stopping early when the ordering invariant is reached between the popped
    * last element and a child along the path.  This popped element will be large
-   * anyway, so we're trading off 2x the comparison/branchign count for a
+   * anyway, so we're trading off 2x the comparison/branching count for a
    * miniscule number of potential additional assignments.
    */
   pop() {
