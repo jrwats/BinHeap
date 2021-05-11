@@ -2,6 +2,10 @@
   <a href="https://travis-ci.com/jrwats/BinHeap">
     <img src="https://img.shields.io/travis/com/jrwats/BinHeap?logo=travis" alt="Travis CI" />
   </a>
+  <a href="https://www.npmjs.com/package/bin-heap-js">
+    <img src="https://img.shields.io/npm/v/bin-heap-js" alt="bin-heap-js" />
+  </a>
+
 </p>
 
 # BinHeap
